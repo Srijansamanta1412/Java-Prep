@@ -7,6 +7,7 @@ public class Main {
       Users u = new Users();
       u.wallet.addFunds(100.0);
       System.out.println("User wallet balance: " + u.wallet.getBalance());
-
+     u.wallet.deductFunds(30.0);
+      System.out.println("User wallet balance after deduction: " + u.wallet.getBalance());
     }
   }
